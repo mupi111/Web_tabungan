@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+
+Route::resource('nasabahs', App\Http\Controllers\API\NasabahAPIController::class);
+
+
+
+
+Route::resource('tabungans', App\Http\Controllers\API\TabunganAPIController::class);

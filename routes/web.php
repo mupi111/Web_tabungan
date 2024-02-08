@@ -20,3 +20,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+
+Route::resource('nasabahs', App\Http\Controllers\NasabahController::class);
+
+
+
+
+Route::resource('tabungans', App\Http\Controllers\TabunganController::class);
